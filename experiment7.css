@@ -1,0 +1,40 @@
+header {
+  display: block;
+  background: lightgray;
+  padding: 10px;
+  text-align: center;
+}
+
+.inlineblockmenu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.inlineblockmenu li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.inlineblockmenu a {
+  text-decoration: none;
+  padding: 5px;
+  background: lightgoldenrodyellow;
+}
+
+.floatmenu ul {
+  list-style: none;
+  padding: 0;
+}
+.floatmenu li {
+  float: left;
+  margin-right: 10px;
+}
+.floatmenu a {
+  text-decoration: none;
+  padding: 5px;
+  background: cyan;
+}
+
+.clear {
+  clear: both;
+}

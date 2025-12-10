@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f1e1e;
+  color: white;
+  padding: 15px 20px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.navlinks {
+  display: flex;
+  list-style: none;
+}
+
+.navlinks li {
+  margin: 0 15px;
+}
+
+.navlinks a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
+.actions a {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .navlinks {
+    display: none;
+  }
+  .actions {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navlinks a {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 1025px) {
+  .navlinks a {
+    font-size: 1rem;
+  }
+}
+
+hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+/* Hide checkbox */
+#menu-toggle {
+  display: none;
+}
+/* Mobile-first Design */
+@media (max-width: 768px) {
+  .navlinks {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: #333;
+    padding: 15px 0;
+  }
+  .navlinks li {
+    margin: 10px 0;
+    text-align: center;
+  }
+  .hamburger {
+    display: block;
+  }
+  /* Show menu when checkbox is checked */
+  #menu-toggle:checked + .hamburger + .navlinks {
+    display: flex;
+  }
+}

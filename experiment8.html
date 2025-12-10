@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox student profile</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background: #ece8e8;
+      }
+      h2 {
+        text-align: center;
+      }
+      .container {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: center; 
+        align-items: center; 
+        gap: 20px; 
+        flex-wrap: wrap; 
+      }
+      .card {
+        background: #fffefe;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px lightblue;
+        width: 220px;
+        text-align: center;
+        padding: 16px;
+      }
+      .avatar {
+        width: 70px;
+        height: 70px;
+        background: #0177f6;
+        color: #ffffff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        margin: 0 auto 12px;
+      }
+      .name {
+        font-weight: bold;
+        font-size: 18px;
+      }
+      .detail {
+        font-size: 14px;
+        color: grey;
+        margin: 2px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>students profile</h2>
+    <div class="container">
+      <div class="card">
+        <div class="avatar">pr</div>
+        <div class="name">priyanshu rawat</div>
+        <div class="detail">btech cse ds</div>
+        <div class="detail">roll no: 1234</div>
+        <div class="detail">first year</div>
+      </div>
+      <div class="card">
+        <div class="avatar">ps</div>
+        <div class="name">pushpjeet sharma</div>
+        <div class="detail">btech cse ds</div>
+        <div class="detail">roll no: 1235</div>
+        <div class="detail">first year</div>
+      </div>
+      <div class="card">
+        <div class="avatar">mt</div>
+        <div class="name">medhawwin tiwary</div>
+        <div class="detail">btech cse</div>
+        <div class="detail">roll no: 12345</div>
+        <div class="detail">first year</div>
+      </div>
+    </div>
+  </body>
+</html>
